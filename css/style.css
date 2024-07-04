@@ -1,0 +1,316 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    width: 100%;
+    height: 660px;
+    background-image: url(../imaga/events-heavenly-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    color: white;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 46, 51, 0.6);
+    z-index: 2;
+}
+
+.menu-left {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.menu-left a {
+    padding: 20px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    color: white;
+}
+
+a {
+    background-color: transparent;
+}
+
+.title {
+    margin-left: 0px;
+    transition: .5s;
+    padding: 16px;
+    z-index: 3;
+}
+
+.title h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 200px;
+    font-weight: 500;
+}
+
+.title p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/*slider section*/
+ .accordion {
+     margin: 100px auto; 
+    width: 50%; 
+    text-align: center;
+    display: block;
+    padding: 20px;
+    
+}
+
+
+.accordion a {
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(214, 46, 51, 0.6);
+    cursor: pointer;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.accordion li{
+    list-style: none;
+}
+
+.sub-menu{
+    background: #ccc;
+}
+
+
+
+
+.accordion > li:hover > a,
+.accordion > li:target > a,
+.accordion > li > a.active {
+    color: #dc3545;
+    text-shadow: 1px 1px 1px rgba(255,255,255, .2);
+ 
+    /*background: url(../img/active.png) repeat-x;*/
+    background: #ccc;
+    background: -moz-linear-gradient(top,  #ccc 0%, #dc3545 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
+    background: -webkit-linear-gradient(top,  #ccc 0%,#dc3545 100%);
+    background: -o-linear-gradient(top,  #ccc 0%,#dc3545 100%);
+    background: -ms-linear-gradient(top,  #ccc 0%,#dc3545 100%);
+    background: linear-gradient(top,  #ccc 0%,#dc3545 100%);
+} 
+.accordion > li:hover > a span,
+.accordion > li:target > a span,
+.accordion > li > a.active span {
+    color: #fdfdfd;
+    text-shadow: 0px 1px 0px rgba(0,0,0, .35);
+    background: #dc3545;
+    
+}
+.accordion li.files > a:before { background-position: 0px 0px; }
+.accordion li.files:hover > a:before,
+.accordion li.files:target > a:before,
+.accordion li.files > a.active:before { background-position: 0px -24px; }
+ 
+.accordion li.mail > a:before { background-position: -24px 0px; }
+.accordion li.mail:hover > a:before,
+.accordion li.mail:target > a:before,
+.accordion li.mail > a.active:before { background-position: -24px -24px; }
+ 
+.accordion li.cloud > a:before { background-position: -48px 0px; }
+.accordion li.cloud:hover > a:before,
+.accordion li.cloud:target > a:before,
+.accordion li.cloud > a.active:before { background-position: -48px -24px; }
+ 
+.accordion li.sign > a:before { background-position: -72px 0px; }
+.accordion li.sign:hover > a:before,
+.accordion li.sign:target > a:before,
+.accordion li.sign > a.active:before { background-position: -72px -24px; }
+
+.accordion li > .sub-menu {
+    display: none;
+}
+ 
+.accordion li:target > .sub-menu {
+    display: block;
+}
+
+/*count section*/
+
+#count {
+    background-image: url(../imaga/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+    height: 330px;
+    
+}
+
+.count-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(214, 46, 51, 0.6);
+}
+
+.container {
+    padding: 100px 0px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+   
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.time {
+    padding: 50px 50px;
+    border: 1px solid #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+/*contact*/
+#contact-us{
+    margin-top: 100px;
+    padding-left: 20px;
+}
+.header p{
+    text-align: center;
+}
+.header h2{
+    font-size: xx-large;
+    text-align: left;
+    padding-left: 10%;
+}
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.col-6{
+    position: relative;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.info{
+    text-align: center;
+   
+}
+.icon{
+    margin-top: 50px;
+
+}
+.social-list{
+    margin-top: 60px;
+    color: #777;
+}
+.social-list a{
+    margin-right: 10px;
+    border: 1px solid #999;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+    color: #777;
+}
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 2px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    font-weight: 400;
+}
+
+.fa:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+.fa-dribbble {
+    background: white;
+    color: #777;
+}
+
+.fa-instagram {
+    background:white;
+    color: #777;
+
+}
+
+.fa-pinterest {
+    background:white;
+    color: #777;
+}
+
+.fa-facebook {
+    background:white;
+    color: #777;
+}
+
+.fa-twitter {
+    background:white;
+    color: #777;
+}
+
+
+.form-control{
+    display: block;
+    width: 100%;
+    
+    font-weight: 400;
+    line-height: 3;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4de;
+}
+.col-6 form{
+    padding-top: 20px;
+   padding-right: 20px;
+}
+.form-group{
+    padding-bottom: 30px;
+
+}
+.col-6 .button{
+    background: #dc3545;
+    border: none;
+    height: 50px;
+    width: 160px;
+    color: white;
+    border-radius: 7%;
+}
